@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  box-sizing: inherit;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  background-color: #3b4148;
+  color: #ffffff;
+}
+
+.App{
+  position: relative;
+  width: 360px;
+  height: auto;
+  background-color: #000;
+  padding-top: 20px;
+  margin-left: 35%;
+}
+
+header{
+  color: #707070;
+  margin-left: 20px;
+}
+
+.balance{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.transaction_container{
+  margin: 108px 0;
+  background-color: #ffffff;
+  color: #000;
+  border: #ffffff solid;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+.amounts{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 14px;
+  color: #000;
+}
+
+.amounts div{
+  position: absolute;
+  top: 175px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 80px;
+  width: 145px;
+  background-color: #F0F0F0;
+}
+.income{
+  left: 20px;
+}
+.expence{
+  right: 20px;
+}
+.amounts div p{
+  margin-bottom: 10px;
+}
+
+.history_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 20px;
+  color: #707070;
+}
+
+#history_header__drop_menu{
+  padding: 2px;
+  width: 140px;
+  color: #707070;
+  border-radius: 5px;
+  outline: none;
+  
+}
+
+.transactions_list{
+  height: auto;
+}
+
+.list ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 20px;
+}
+
+.list ul li{
+  margin-bottom: 10px;
+}
+.line{
+  margin: 5px 20px;
+}
+
+.add_transaction p{
+  font-weight: 600;
+  margin: 0 0 10px 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 20px;
+}
+
+form input:not(:last-child) {
+  padding: 10px 0 10px 15px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin-bottom: 10px;
+}
+
+form input:last-child{
+  background-color: #0b0b0b;
+  color: #F0F0F0;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+.transactions_list p{
+  margin-left: 20px;
+  color: #707070;
+}
+
+.zero_transactions {
+  text-align: center;
+  padding-top: 10%;
+  height: 200px;
+}
+.zero_transactions p{
+  color: #707070;
+  font-size: 12px;
+}
