@@ -10,7 +10,7 @@ import { useState, createContext, } from 'react';
 export const TransactionContext =  createContext();
 
 function App() {
-  
+  const list = []
   return (
     <div className="App">
       <TransactionContext.Provider value={[]}>
