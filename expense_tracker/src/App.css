@@ -13,15 +13,20 @@ body{
   font-size: 15px;
   background-color: #3b4148;
   color: #ffffff;
+  overflow-y: hidden;
 }
 
 .App{
   position: relative;
   width: 360px;
-  height: auto;
+  height:740px;
   background-color: #000;
   padding-top: 20px;
   margin-left: 35%;
+  overflow-y: scroll;
+}
+.App::-webkit-scrollbar {
+  display: none;
 }
 
 header{
@@ -34,11 +39,11 @@ header{
   margin-left: 20px;
 }
 .transaction_container{
-  margin: 108px 0;
+  margin: 108px 0 0 0;
   background-color: #ffffff;
   color: #000;
   border: #ffffff solid;
-  height: auto;
+  height: 100%;
   border-radius: 20px 20px 0 0;
 }
 .amounts{
@@ -103,9 +108,15 @@ header{
   margin: 5px 20px;
 }
 
+
+
 .add_transaction p{
   font-weight: 600;
   margin: 0 0 10px 20px;
+}
+
+.transactions_list{
+  padding-bottom: 20px;
 }
 
 form{
@@ -122,7 +133,8 @@ form input:not(:last-child) {
   margin-bottom: 10px;
 }
 
-form input:last-child{
+/* form input:last-child */
+form button{
   background-color: #0b0b0b;
   color: #F0F0F0;
   padding: 10px 0;
@@ -137,10 +149,10 @@ form input:last-child{
 
 .zero_transactions {
   text-align: center;
-  padding-top: 10%;
-  height: 200px;
+  padding:110px 0;
 }
 .zero_transactions p{
   color: #707070;
   font-size: 12px;
 }
+
